@@ -1,0 +1,73 @@
+/* Body styling */
+body {
+    font-family: 'Alumni Sans Pinstripe', sans-serif; /* Google Fonts */
+    margin: 0;
+    background-color: #f5efeb; /* Light background color */
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    background-color: #929673; /* Uniform background */
+    padding: 10px;
+    width: 100%; /* Full width of the viewport */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 10px;
+}
+
+main {
+    align-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #718eaf; /* Dark background for nav */
+    padding: 20px;
+    height: 100vh; /* Full height of the viewport */
+    gap: 15px; /* Add spacing between nav items */
+}
+
+/* Navigation List Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: left; /* Align links to the left */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underlines */
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #2f4156; /* Hover effect */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #929673; /* Same as header for uniformity */
+    padding: 15px;
+    width: 100%; /* Full width of the viewport */
+    margin-top: auto; /* Push the footer to the bottom */
+}
