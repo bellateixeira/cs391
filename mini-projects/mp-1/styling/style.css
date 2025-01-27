@@ -31,6 +31,7 @@ nav {
     padding: 60px;
     gap: 15px; /* Add spacing between nav items */
     float: left;
+    height: 100vh;
 }
 
 /* Navigation List Styling */
