@@ -1,0 +1,35 @@
+CLASS NOTES
+
+- for font size use calc () only; take advantage of relative units
+- wrap the body tag in the div tag and use that for the media query
+- stay away from pixels
+- use box sizing
+- maker a folder for each page to hold both css and html
+-  wrap a div tag around each element in the body (main, footer, nav and header) --> and give them id values
+
+
+page-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+remove use of pixels in padding and margins
+
+wrap nav and main into a div called 'container'
+
+#container {
+    width: 100%
+    display:flex
+    flex-direction: row
+    position: relative
+    background-color:
+    visibility: hidden
+}
+
+media query should change flex-direction to column
+height: 100vh
+--> only change what you are overwriting
+
+always start *{
+margin: 0
+box-sizing: border-box }

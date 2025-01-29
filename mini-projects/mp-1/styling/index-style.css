@@ -1,0 +1,122 @@
+/* Styling for full page */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Geneva', sans-serif; /* Apply a Google Font */
+    background-color: #f5efeb; /* Set a light background color */
+}
+
+#page-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Footer styling */
+#footer-container{
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    padding-top: 4vh;
+    text-align: center; /* Center-align the text in the footer */
+    background-color: #929673; /* Set a background color for the footer */
+    position: relative; /* Position the footer relative to the document flow */
+    bottom: 0; /* Align the footer to the bottom of the page */
+}
+
+/* Header styling */
+#header-container {
+    width: 100%;
+}
+
+#header-container h1 {
+    background-color: #929673; /* Set a background color for the heading */
+    border: none; /* Remove any borders */
+    padding: 20px 20px; /* Add padding inside the heading 'button' */
+    border-radius: 5px; /* Add rounded corners to the heading */
+    text-decoration: none; /* Remove underline from the text */
+    text-align: center;
+    font-weight: bolder;
+}
+
+#content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#content-wrapper main {
+    padding: 40px; /* Add padding around the main content */
+}
+
+#content-wrapper nav {
+    background-color: #718eaf; /* Set a dark background color for the navigation */
+}
+
+/* Navigation List Styling */
+#content-wrapper ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+
+#content-wrapper ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    display: block; /* Make the links behave like block elements */
+    padding: 45px; /* Add padding inside the links */
+    color: #fff; /* Set the text color to white */
+}
+
+#content-wrapper ul li a:hover {
+    background-color: #2f4156; /* Change background color on hover */
+}
+
+/* Image Styling */
+#content-wrapper img {
+    height: auto; /* Maintain the image's aspect ratio */
+    max-width: 100%; /* Prevent the image from exceeding its container's width */
+    margin-bottom: 30px; /* Add space below the image */
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+
+    #content-wrapper {
+        flex-direction: column; /* Stack nav and main vertically */
+        align-items: stretch; /* Center elements */
+    }
+
+    #content-wrapper nav {
+        width: 100%; /* Make navigation bar span full width */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #content-wrapper ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center links */
+        padding: 0;
+    }
+
+    #content-wrapper ul li {
+        width: 100%;
+    }
+
+    #content-wrapper ul li a {
+        display: block;
+        width: 100%; /* Make links take full width */
+        padding: 15px; /* Adjust padding for better spacing */
+    }
+
+    #content-wrapper main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center; /* Center-align text for readability */
+    }
+
+}

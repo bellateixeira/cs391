@@ -1,0 +1,92 @@
+/* Body styling */
+body {
+    display: flex; /* Establish a flexbox container */
+    flex-direction: column; /* Arrange children in a column */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+    font-family: 'Alumni Sans Pinstripe', sans-serif; /* Apply a Google Font */
+    background-color: #f5efeb; /* Set a light background color */
+    margin: 0; /* Remove default browser margin */
+}
+
+/* Header styling */
+header {
+    width: 100%; /* Make the header span the full width of the viewport */
+    display: flex; /* Make the header a flexbox container */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    margin-left: 290px; /* Offset the header from the navigation bar */
+}
+
+h1 {
+    background-color: #929673; /* Set a background color for the heading */
+    border: none; /* Remove any borders */
+    padding: 10px 20px; /* Add padding inside the heading 'button' */
+    border-radius: 5px; /* Add rounded corners to the heading */
+    text-decoration: none; /* Remove underline from the text */
+}
+
+p {
+    /* No additional styling applied to paragraphs */
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and fill the available space */
+    display: flex; /* Make the main section a flexbox container */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    padding: 40px; /* Add padding around the main content */
+    margin-left: 250px; /* Offset the main content from the navigation bar */
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #718eaf; /* Set a dark background color for the navigation */
+    padding: 20px; /* Add padding inside the navigation bar */
+    position: fixed; /* Fix the navigation bar to the left of the viewport */
+    top: 0; /* Align the navigation to the top of the viewport */
+    left: 0; /* Align the navigation to the left of the viewport */
+    width: 13%; /* Set a fixed width for the navigation bar */
+    height: 100%; /* Make the navigation bar span the full height of the viewport */
+}
+
+/* Navigation List Styling */
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding from the list */
+    display: flex; /* Make the list a flexbox container */
+    flex-direction: column; /* Arrange list items in a column */
+    width: 100%; /* Make the list span the full width of the navigation bar */
+    gap: 15px; /* Add space between list items */
+}
+
+nav ul li {
+    text-align: left; /* Align list items to the left */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underlines from links */
+    display: block; /* Make the links behave like block elements */
+    padding: 10px; /* Add padding inside the links */
+    border-radius: 5px; /* Add rounded corners to the links */
+    color: #fff; /* Set the text color to white */
+}
+
+nav ul li a:hover {
+    background-color: #2f4156; /* Change background color on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Center-align the text in the footer */
+    background-color: #929673; /* Set a background color for the footer */
+    width: auto; /* Allow the footer to adjust its width automatically */
+    position: relative; /* Position the footer relative to the document flow */
+    bottom: 0; /* Align the footer to the bottom of the page */
+}
+
+/* Image Styling */
+img {
+    height: auto; /* Maintain the image's aspect ratio */
+    max-width: 100%; /* Prevent the image from exceeding its container's width */
+    margin-bottom: 50px; /* Add space below the image */
+}
