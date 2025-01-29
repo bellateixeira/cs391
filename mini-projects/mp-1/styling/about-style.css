@@ -1,11 +1,13 @@
-/* Body styling */
-body {
-    display: flex; /* Establish a flexbox container */
-    flex-direction: column; /* Arrange children in a column */
-    min-height: 100vh; /* Ensure the body takes up the full viewport height */
-    font-family: 'Alumni Sans Pinstripe', sans-serif; /* Apply a Google Font */
-    background-color: #f5efeb; /* Set a light background color */
-    margin: 0; /* Remove default browser margin */
+/* Styling for full page */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Geneva', sans-serif; /* Apply a Google Font */
+}
+
+#page-wrapper {
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Header styling */
@@ -13,80 +15,152 @@ header {
     width: 100%; /* Make the header span the full width of the viewport */
     display: flex; /* Make the header a flexbox container */
     flex-direction: column; /* Arrange items in a column */
-    align-items: flex-start; /* Align items to the start of the flex container */
-    margin-left: 290px; /* Offset the header from the navigation bar */
+    background-color: #929673;
 }
 
-h1 {
+header h1 {
     background-color: #929673; /* Set a background color for the heading */
-    border: none; /* Remove any borders */
-    padding: 10px 20px; /* Add padding inside the heading 'button' */
-    border-radius: 5px; /* Add rounded corners to the heading */
-    text-decoration: none; /* Remove underline from the text */
+    align-self: center;
+    margin: 5vh auto;
+    border-radius: 5vh;
+    padding: 3vh 0;
+    width: 25%;
+    text-align: center;
 }
 
-p {
-    /* No additional styling applied to paragraphs */
+#content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
-main {
-    flex: 1; /* Allow the main content to grow and fill the available space */
-    display: flex; /* Make the main section a flexbox container */
-    flex-direction: column; /* Arrange items in a column */
-    align-items: flex-start; /* Align items to the start of the flex container */
-    padding: 40px; /* Add padding around the main content */
-    margin-left: 250px; /* Offset the main content from the navigation bar */
-}
-
-/* Navigation Styling */
 nav {
+    width: 30%;
     background-color: #718eaf; /* Set a dark background color for the navigation */
-    padding: 20px; /* Add padding inside the navigation bar */
-    position: fixed; /* Fix the navigation bar to the left of the viewport */
-    top: 0; /* Align the navigation to the top of the viewport */
-    left: 0; /* Align the navigation to the left of the viewport */
-    width: 13%; /* Set a fixed width for the navigation bar */
-    height: 100%; /* Make the navigation bar span the full height of the viewport */
 }
 
 /* Navigation List Styling */
 nav ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove padding from the list */
-    display: flex; /* Make the list a flexbox container */
-    flex-direction: column; /* Arrange list items in a column */
-    width: 100%; /* Make the list span the full width of the navigation bar */
-    gap: 15px; /* Add space between list items */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: calc(1.5px + 1.5vw);
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
 }
 
-nav ul li {
-    text-align: left; /* Align list items to the left */
+nav li {
+    width: 90%;
+    background-color: #718eaf;
+    padding: 2vh 0;
+    margin: 10% auto;
+    margin-left: 10%;
+    font-size: calc(1.3px + 1.3vw);
 }
 
-nav ul li a {
-    text-decoration: none; /* Remove underlines from links */
-    display: block; /* Make the links behave like block elements */
-    padding: 10px; /* Add padding inside the links */
-    border-radius: 5px; /* Add rounded corners to the links */
-    color: #fff; /* Set the text color to white */
+nav li a {
+    text-decoration: none;
+    color: white;
 }
 
-nav ul li a:hover {
-    background-color: #2f4156; /* Change background color on hover */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f5efeb;
 }
 
-/* Footer Styling */
+main p {
+    margin: 0 1vw;
+    font-size: calc(1px + 1vw);
+}
+
+#profile-image {
+    max-width: 100%;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 4vh 4vw;
+}
+
+#main-text {
+    align-self: center;
+    width: 70%;
+    margin: 1vh 1vw;
+}
+
+#main-image{
+    width: 40%;
+    margin: 1vh 1vw;
+}
+
+/* Footer styling */
 footer {
-    text-align: center; /* Center-align the text in the footer */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1vh 1vw;
     background-color: #929673; /* Set a background color for the footer */
-    width: auto; /* Allow the footer to adjust its width automatically */
-    position: relative; /* Position the footer relative to the document flow */
-    bottom: 0; /* Align the footer to the bottom of the page */
 }
 
-/* Image Styling */
-img {
-    height: auto; /* Maintain the image's aspect ratio */
-    max-width: 100%; /* Prevent the image from exceeding its container's width */
-    margin-bottom: 50px; /* Add space below the image */
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        align-items: center;
+    }
+
+    #content-wrapper {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    nav li {
+        padding: 1% .5%;
+        margin: 1% .5%;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    main p {
+        margin: 2% 2%;
+    }
+
+    #main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-text {
+        width: 100%;
+    }
+
+    #main-image {
+        margin: 1vh auto;
+    }
 }

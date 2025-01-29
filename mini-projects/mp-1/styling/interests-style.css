@@ -90,3 +90,44 @@ img {
     max-width: 100%; /* Prevent the image from exceeding its container's width */
     margin-bottom: 50px; /* Add space below the image */
 }
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+
+    #content-wrapper {
+        flex-direction: column; /* Stack nav and main vertically */
+        align-items: stretch; /* Center elements */
+    }
+
+    #content-wrapper nav {
+        width: 100%; /* Make navigation bar span full width */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #content-wrapper ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center links */
+        padding: 0;
+    }
+
+    #content-wrapper ul li {
+        width: 100%;
+    }
+
+    #content-wrapper ul li a {
+        display: block;
+        width: 100%; /* Make links take full width */
+        padding: 15px; /* Adjust padding for better spacing */
+    }
+
+    #content-wrapper main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center; /* Center-align text for readability */
+    }
+
+}
