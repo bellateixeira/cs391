@@ -40,6 +40,13 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/projects" />
+      <recent name="$PROJECT_DIR$/interests" />
+      <recent name="$PROJECT_DIR$/home" />
+      <recent name="$PROJECT_DIR$/education" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -61,7 +68,7 @@
       <workItem from="1737998138557" duration="7414000" />
       <workItem from="1738083411575" duration="2437000" />
       <workItem from="1738096062987" duration="9323000" />
-      <workItem from="1738191907719" duration="2995000" />
+      <workItem from="1738191907719" duration="15760000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,12 @@
 /* Styling for full page */
 * {
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Prevent padding distortions */
     font-family: 'Geneva', sans-serif; /* Apply a Google Font */
 }
 
 #page-wrapper {
-    width: 100%;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -41,6 +41,21 @@ nav {
 }
 
 /* Navigation List Styling */
+nav li {
+    background-color: #718eaf;
+    padding: 2vh 0;
+    font-size: calc(1px + 1.3vw);
+    margin: 3vh 3vw;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #929673;
+    font-size: calc(2px + 2vw);
+    border-radius: 6vh 3vw;
+    padding: 1.2vh 1.2vw;
+}
+
 nav ul {
     display: flex;
     flex-direction: column;
@@ -51,20 +66,6 @@ nav ul {
     padding-left: 0;
 }
 
-nav li {
-    width: 90%;
-    background-color: #718eaf;
-    padding: 2vh 0;
-    margin: 10% auto;
-    margin-left: 10%;
-    font-size: calc(1.3px + 1.3vw);
-}
-
-nav li a {
-    text-decoration: none;
-    color: white;
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -73,12 +74,8 @@ main {
 }
 
 main p {
-    margin: 0 1vw;
+    margin: 3vh 1vw;
     font-size: calc(1px + 1vw);
-}
-
-#profile-image {
-    max-width: 100%;
 }
 
 #main {
@@ -90,13 +87,26 @@ main p {
 
 #main-text {
     align-self: center;
-    width: 70%;
-    margin: 1vh 1vw;
+    width: 100%;
+    margin: 1vh;
 }
 
-#main-image{
-    width: 40%;
-    margin: 1vh 1vw;
+main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0;
+}
+
+h2.proj-page-headers {
+    margin: 3vh 1vw;
 }
 
 /* Footer styling */
@@ -140,7 +150,7 @@ footer a:hover {
 
     nav li {
         padding: 1% .5%;
-        margin: 1% .5%;
+        margin: 1% 0;
     }
 
     main {
