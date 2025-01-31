@@ -24,8 +24,8 @@ header h1 {
     margin: 5vh auto;
     border-radius: 5vh;
     padding: 3vh 0;
-    width: 25%;
     text-align: center;
+    font-size: calc(4px + 4vw);
 }
 
 #content-wrapper {
@@ -61,7 +61,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: calc(1.5px + 1.5vw);
+    font-size: calc(1px + 1.5vw);
     text-align: left;
     list-style: none;
     padding-left: 0;
@@ -76,7 +76,7 @@ main {
 
 main p {
     margin: 3vh 1vw;
-    font-size: calc(1px + 1vw);
+    font-size: calc(2px + 2vw);
 }
 
 #profile-image {
@@ -86,7 +86,7 @@ main p {
 #main {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 4vh 4vw;
 }
 
@@ -97,8 +97,9 @@ main p {
 }
 
 #main-image{
-    width: 40%;
-    margin: 1vh 1vw;
+    width: auto;
+    margin: 4.5vh 1vw;
+    align-self: center;
 }
 
 /* Footer styling */
@@ -125,44 +126,24 @@ footer a:hover {
     }
 
     #content-wrapper {
-        width: 100%;
-        height: 100vh;
         flex-direction: column;
     }
 
     nav {
+        flex-direction: row;
         width: 100%;
     }
 
     nav ul {
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 0;
     }
 
     nav li {
-        padding: 1% .5%;
         margin: 1% 0;
-    }
-
-    main {
-        height: 100vh;
-    }
-
-    main p {
-        margin: 2% 2%;
-    }
-
-    #main {
-        flex-direction: column;
-        justify-content: center;
     }
 
     #main-text {
         width: 100%;
-    }
-
-    #main-image {
-        margin: 1vh auto;
     }
 }
