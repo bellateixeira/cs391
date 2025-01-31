@@ -1,8 +1,8 @@
 /* Styling for full page */
 * {
     margin: 0;
-    box-sizing: border-box; /* Prevent padding distortions */
-    font-family: 'Geneva', sans-serif; /* Apply a Google Font */
+    box-sizing: border-box;
+    font-family: 'Geneva', sans-serif;
 }
 
 #page-wrapper {
@@ -12,14 +12,14 @@
 
 /* Header styling */
 header {
-    width: 100%; /* Make the header span the full width of the viewport */
-    display: flex; /* Make the header a flexbox container */
-    flex-direction: column; /* Arrange items in a column */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #929673;
 }
 
 header h1 {
-    background-color: #929673; /* Set a background color for the heading */
+    background-color: #929673;
     align-self: center;
     margin: 5vh auto;
     border-radius: 5vh;
@@ -28,6 +28,7 @@ header h1 {
     font-size: calc(4px + 4vw);
 }
 
+/* Main Styling */
 #content-wrapper {
     width: 100%;
     display: flex;
@@ -37,7 +38,7 @@ header h1 {
 
 nav {
     width: 30%;
-    background-color: #718eaf; /* Set a dark background color for the navigation */
+    background-color: #718eaf;
 }
 
 /* Navigation List Styling */
@@ -76,7 +77,7 @@ main {
 
 main p {
     margin: 3vh 1vw;
-    font-size: calc(2px + 2vw);
+    font-size: calc(2px + 1vw);
 }
 
 #profile-image {
@@ -108,7 +109,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 1vh 1vw;
-    background-color: #929673; /* Set a background color for the footer */
+    background-color: #929673;
 }
 
 footer a {
@@ -120,6 +121,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 800px) {
     header {
         align-items: center;

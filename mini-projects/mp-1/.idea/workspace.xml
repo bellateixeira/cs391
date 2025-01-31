@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff4437ce-2bae-4721-816d-7c90ff5ace47" name="Changes" comment="" />
+    <list default="true" id="ff4437ce-2bae-4721-816d-7c90ff5ace47" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../labs/lab0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labs/lab1" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +72,7 @@
       <workItem from="1738083411575" duration="2437000" />
       <workItem from="1738096062987" duration="9323000" />
       <workItem from="1738191907719" duration="18142000" />
-      <workItem from="1738340361079" duration="1765000" />
+      <workItem from="1738340361079" duration="8590000" />
     </task>
     <servers />
   </component>

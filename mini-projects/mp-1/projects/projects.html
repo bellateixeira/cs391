@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="A website showcasing Isabella Teixeira Online Resume">
         <title>Projects | Resume</title>
         <link rel="stylesheet" type="text/css" href="projects-style.css">
     </head>
@@ -48,7 +49,7 @@
                                 within the Data & Analytics team at ABB as well as establishing a new business strategy for how
                                 the Data and Analytics team interact with the business users of the data.</p>
 
-                            <p> Additionally, I assisted with analytical support on a Emissions data project for the
+                            <p> Additionally, I assisted with analytical support on an Emissions data project for the
                                 Sustainability lead of Electrification. </p>
 
                             <h2 class="proj-page-headers"> Personal Projects </h2>
@@ -60,6 +61,29 @@
                                 boost engagement and attract new customers. This is just a little bit of the work I am doing
                                 and plan to do to grow the business that is Cazavia. </p>
                         </div>
+
+                        <div id="calculator">
+
+                            <h2 class="proj-page-headers"> Calculator Project </h2>
+
+                            <label for="first-number">First Number: </label>
+                            <input type="text" id="first-number">
+
+                            <label for="second-number">Second Number: </label>
+                            <input type="text" id="second-number">
+
+                            <div id="button-container">
+                                <button onclick="addition()">+</button>
+                                <button onclick="subtraction()">-</button>
+                                <button onclick="multiplication()">*</button>
+                                <button onclick="division()">/</button>
+                                <button onclick="power()">**</button>
+                                <button onclick="clearFields()">Clear</button>
+                            </div>
+
+                            <p id="output"> Output </p>
+                        </div>
+
                     </div>
                 </main>
                 <!-- Main ends here -->
@@ -71,5 +95,6 @@
             </footer>
             <!-- Footer ends here -->
         </div>
+        <script src="../index.js"></script>
     </body>
 </html>

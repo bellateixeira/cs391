@@ -1,8 +1,8 @@
 /* Styling for full page */
 * {
     margin: 0;
-    box-sizing: border-box; /* Prevent padding distortions */
-    font-family: 'Geneva', sans-serif; /* Apply a Google Font */
+    box-sizing: border-box;
+    font-family: 'Geneva', sans-serif;
 }
 
 #page-wrapper {
@@ -12,14 +12,14 @@
 
 /* Header styling */
 header {
-    width: 100%; /* Make the header span the full width of the viewport */
-    display: flex; /* Make the header a flexbox container */
-    flex-direction: column; /* Arrange items in a column */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #929673;
 }
 
 header h1 {
-    background-color: #929673; /* Set a background color for the heading */
+    background-color: #929673;
     align-self: center;
     margin: 5vh auto;
     border-radius: 5vh;
@@ -28,6 +28,7 @@ header h1 {
     font-size: calc(4px + 4vw);
 }
 
+/* Main Styling */
 #content-wrapper {
     width: 100%;
     display: flex;
@@ -37,7 +38,7 @@ header h1 {
 
 nav {
     width: 30%;
-    background-color: #718eaf; /* Set a dark background color for the navigation */
+    background-color: #718eaf;
 }
 
 /* Navigation List Styling */
@@ -75,13 +76,13 @@ main {
 
 main p {
     margin: 3vh 1vw;
-    font-size: calc(2px + 2vw);
+    font-size: calc(2px + 1vw);
 }
 
 #main {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 4vh 4vw;
 }
 
@@ -89,7 +90,7 @@ main p {
     align-self: center;
     width: 100%;
     margin: 1vh;
-    font-size: calc(2px + 2vw);
+    font-size: calc(2px + 1vw);
 }
 
 main ul {
@@ -108,6 +109,63 @@ main ul li {
 
 h2.proj-page-headers {
     margin: 3vh 1vw;
+    font-size: calc(2px + 2vw);
+}
+
+/* Calculator Styling */
+#calculator {
+    width: 100%;
+    background-color: #929673;
+    border-radius: 10vh;
+    padding: 5vh 5vw;
+    text-align: center;
+}
+
+#calculator label {
+    display: block;
+    font-size: calc(2px + 1vw);
+    font-weight: bold;
+    margin: 5vh 5vw;
+}
+
+#calculator input {
+    width: 50%;
+    border: 0.5vh solid black;
+    border-radius: 10vh;
+    font-size: calc(2px + 1vw);
+    text-align: center;
+}
+
+#button-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 1vh 1vw;
+    margin-top: 5vh;
+}
+
+#calculator button {
+    background-color: #718eaf;
+    color: white;
+    border: none;
+    font-size: calc(2px + 1vw);
+    border-radius: 10vh;
+    cursor: pointer;
+    margin: 5vh 0;
+    padding: 1.2vh 1.2vw;
+}
+
+#calculator button:hover {
+    background-color: #5a7494;
+}
+
+#output {
+    width: 100%;
+    font-size: calc(2px + 1vw);
+    font-weight: bold;
+    margin: 5vh 0;
 }
 
 /* Footer styling */
@@ -128,6 +186,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 800px) {
     header {
         align-items: center;
@@ -153,5 +212,10 @@ footer a:hover {
 
     #main-text {
         width: 100%;
+    }
+
+    #main {
+        width: 100%;
+        flex-direction: column;
     }
 }

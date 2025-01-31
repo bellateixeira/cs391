@@ -2,7 +2,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Geneva', sans-serif; /* Apply a Google Font */
+    font-family: 'Geneva', sans-serif;
 }
 
 #page-wrapper {
@@ -12,14 +12,14 @@
 
 /* Header styling */
 header {
-    width: 100%; /* Make the header span the full width of the viewport */
-    display: flex; /* Make the header a flexbox container */
-    flex-direction: column; /* Arrange items in a column */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #929673;
 }
 
 header h1 {
-    background-color: #929673; /* Set a background color for the heading */
+    background-color: #929673;
     align-self: center;
     margin: 5vh auto;
     border-radius: 5vh;
@@ -28,6 +28,7 @@ header h1 {
     font-size: calc(4px + 4vw);
 }
 
+/* Main and Nav styling */
 #content-wrapper {
     width: 100%;
     display: flex;
@@ -37,7 +38,7 @@ header h1 {
 
 nav {
     width: 30%;
-    background-color: #718eaf; /* Set a dark background color for the navigation */
+    background-color: #718eaf;
 }
 
 /* Navigation List Styling */
@@ -67,6 +68,7 @@ nav li a {
     padding: 1.2vh 1.2vw;
 }
 
+/* Main Styling */
 main {
     display: flex;
     flex-direction: column;
@@ -76,7 +78,7 @@ main {
 
 main p {
     margin: 3vh 1vw;
-    font-size: calc(2px + 2vw);
+    font-size: calc(2px + 1vw);
 }
 
 #profile-image {
@@ -108,6 +110,7 @@ h2.about-page-h2 {
     font-size: calc(2px + 2vw);
 }
 
+/* Poem Styling */
 .poem {
     background-color: #929673;
     display: flex;
@@ -126,7 +129,7 @@ h2.about-page-h2 {
     color: black;
     font-style: italic;
     padding: 1vh 0;
-    font-size: calc(2px + 2vw);
+    font-size: calc(2px + 1vw);
 }
 
 /* Footer styling */
@@ -147,6 +150,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsiveness Design */
 @media screen and (max-width: 800px) {
     header {
         align-items: center;
