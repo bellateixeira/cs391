@@ -126,6 +126,7 @@ h2.about-page-h2 {
     color: black;
     font-style: italic;
     padding: 1vh 0;
+    font-size: calc(2px + 2vw);
 }
 
 /* Footer styling */
