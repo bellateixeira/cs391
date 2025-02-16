@@ -3,16 +3,17 @@ import { User } from "../interfaces/User.ts";
 
 const AllUsersDiv = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     background-color: #f4f4f4;
     padding: 20px;
-    align-content: center;
 `;
 
 const SingleUserDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     max-width: 25%;
     padding: 2%;
     margin: 1%;
@@ -29,9 +30,21 @@ const ProfileImage = styled.img`
     margin-bottom: 10px;
 `;
 
+const HeaderDiv = styled.div`
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    font-size: 30px;
+`;
+
 export default function RandomUsers(props: { data: User[] }) {
     return (
         <AllUsersDiv>
+
+            <HeaderDiv>
+                <h2> Random Users from Around the Word</h2>
+            </HeaderDiv>
+
             {props.data.map((user: User) => (
                 <SingleUserDiv key={user.login.uuid}>
                     <ProfileImage src={user.picture.large} alt={`Profile of ${user.name.first} ${user.name.last}`} />
